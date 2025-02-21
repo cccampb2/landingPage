@@ -1,42 +1,52 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root {
+  /* Core Background Colors */
+  --background-primary: #121212; /* Deep Black - Main Background */
+  --background-secondary: #161616; /* Dark Gray - Sections */
+  --background-tertiary: #222222; /* Slightly Lighter Gray - Cards, Panels */
+
+  /* Text Colors */
+  --text-primary: #ffffff; /* White - Main Text */
+  --text-secondary: #b3b3b3; /* Light Gray - Less Prominent Text */
+  --text-muted: #8c8c8c; /* Muted Gray - Subtle Text */
+
+  /* Accent Colors */
+  --accent-primary: #00ffff; /* Neon Cyan - Highlights, Hover Effects */
+  --accent-secondary: #00d9d9; /* Slightly Darker Cyan */
+
+  /* Button & UI Colors */
+  --button-background: #1a1a1a; /* Dark Gray - Default Button */
+  --button-hover: var(--accent-primary); /* Neon Cyan for Hover */
+  --button-text: var(--text-primary); /* White Text on Buttons */
+  --border-color: #262626; /* Darker Gray for Borders */
+  --divider-color: #262626; /* Dark Gray - Soft & Minimal */
+
+  /* Social Media Colors */
+  --linkedin-color: #0077b5; /* LinkedIn Blue */
+  --github-color: #238636; /* GitHub Dark Gray */
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+* {
+  box-sizing: border-box;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+html {
+  background-color: var(--background-primary);
+  scroll-behavior: smooth;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.page {
+  margin: 0;
+  background-color: var(--background-primary);
+  background-image: url(../../assets/background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  padding: 32px;
+  min-height: 100vh;
+  font-family: "AfacadFlux", sans-serif;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.page__content {
+  position: relative;
+  z-index: 2;
 }

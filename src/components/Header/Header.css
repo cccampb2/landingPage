@@ -1,0 +1,135 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  align-items: center;
+  padding: 10px 20px;
+  font-family: "AfacadFlux", sans-serif;
+  font-weight: 600;
+  line-height: 24px;
+  font-size: 16px;
+  z-index: 100;
+}
+
+.header__logo {
+  height: 35px;
+  padding: 0 16px;
+}
+
+.header__nav-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 0;
+}
+
+.header__navlink {
+  padding: 16px;
+  transition: color 0.2s ease-in-out;
+  transition: transform 0.2s ease-in;
+  color: inherit;
+  text-decoration: inherit;
+}
+.header__navlink:hover {
+  cursor: pointer;
+  color: var(--accent-secondary);
+  transform: scale(1.15);
+}
+
+.header__link {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.header__nav-links-mobile {
+  display: none;
+}
+
+.header__navlink-mobile {
+  display: none;
+}
+
+.header__menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.header__menu-btn:hover {
+  color: var(--button-hover);
+  transform: scale(1.15);
+}
+
+.header__period {
+  color: var(--accent-primary);
+}
+
+.header__scroll {
+  background-color: var(--background-primary);
+  background-image: url(../../assets/background.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+.header__link-mobile,
+.header__nav-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__menu-btn {
+    display: block;
+  }
+  .header__nav-links {
+    display: none;
+  }
+
+  .header__nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    gap: 4px;
+  }
+
+  .header__navlink-mobile {
+    display: block;
+    background-color: var(--background-tertiary);
+    padding: 12px 24px;
+    border-radius: 30px;
+    color: var(--text-primary);
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    border: 1px solid var(--accent-primary);
+  }
+
+  .header__navlink-mobile:hover {
+    color: var(--background-primary);
+    background-color: var(--accent-primary);
+    cursor: pointer;
+  }
+  .header__link-mobile,
+  .header__nav-mobile {
+    display: block;
+    color: inherit;
+    text-decoration: inherit;
+  }
+}

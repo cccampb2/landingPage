@@ -1,0 +1,33 @@
+.section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+  align-items: center;
+  padding: 0 5% 96px;
+  min-height: 100vh;
+}
+
+.section__hero {
+  padding: 156px 5% 96px;
+}
+
+@media (max-width: 1024px) {
+  .section {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  @media (max-width: 480px) {
+    .section {
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+  }
+}

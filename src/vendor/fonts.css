@@ -1,41 +1,41 @@
-/* @font-face {
-  font-family: "Cabinet Grotesk";
-  src: url("./fonts/CabinetGrotesk-Regular.woff") format("woff");
-} */
-
-/* @font-face {
-  font-family: "Cabinet Grotesk";
-  src: url("./fonts/CabinetGrotesk-Black.woff") format("woff");
-} */
-
-/* @font-face {
-  font-family: "Cabinet Grotesk";
-  src: url("./fonts/CabinetGrotesk-Extrabold.woff") format("woff");
-} */
-
-/* @font-face {
-  font-family: "Cabinet Grotesk";
-  src: url("./fonts/CabinetGrotesk-Extralight.woff") format("woff");
-} */
-/* @font-face {
-  font-family: "Cabinet Grotesk";
-  src: url("./fonts/CabinetGrotesk-Light.woff") format("woff");
-} */
 @font-face {
-  font-family: "Cabinet Grotesk";
-  font-weight: 500;
+  font-family: "AfacadFlux";
   font-style: normal;
-  src: url("./fonts/CabinetGrotesk-Medium.woff") format("woff");
+  font-weight: 400;
+  src: url("./fonts/AfacadFlux-Regular.ttf") format("truetype");
 }
 
-/* @font-face {
-  font-family: "Cabinet Grotesk";
-  src: url("./fonts/CabinetGrotesk-Thin.woff") format("woff");
-} */
+@font-face {
+  font-family: "AfacadFlux";
+  font-style: "normal";
+  font-weight: 500;
+  src: url("./fonts/AfacadFlux-Medium.ttf") format("truetype");
+}
 
 @font-face {
-  font-family: "Cabinet Grotesk";
-  font-size: 700;
-  font-style: normal;
-  src: url("./fonts/CabinetGrotesk-Bold.woff") format("woff");
+  font-family: "AfacadFlux";
+  font-style: "normal";
+  font-weight: 600;
+  src: url("./fonts/AfacadFlux-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  font-style: "normal";
+  font-weight: 700;
+  src: url("./fonts/AfacadFlux-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  font-style: "normal";
+  font-weight: 800;
+  src: url("./fonts/AfacadFlux-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "AfacadFlux";
+  font-style: "normal";
+  font-weight: 900;
+  src: url("./fonts/AfacadFlux-Black.ttf") format("truetype");
 }
