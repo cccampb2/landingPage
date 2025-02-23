@@ -12,7 +12,7 @@
   padding: 10px 20px;
   font-family: "AfacadFlux", sans-serif;
   font-weight: 600;
-  line-height: 24px;
+  line-height: 1.5;
   font-size: 16px;
   z-index: 100;
 }
@@ -31,7 +31,6 @@
 }
 
 .header__navlink {
-  padding: 16px;
   transition: color 0.2s ease-in-out;
   transition: transform 0.2s ease-in;
   color: inherit;
@@ -46,6 +45,7 @@
 .header__link {
   color: inherit;
   text-decoration: inherit;
+  padding: 16px;
 }
 
 .header__nav-links-mobile {
@@ -54,6 +54,7 @@
 
 .header__navlink-mobile {
   display: none;
+  line-height: 1.3;
 }
 
 .header__menu-btn {
@@ -69,10 +70,6 @@
 .header__menu-btn:hover {
   color: var(--button-hover);
   transform: scale(1.15);
-}
-
-.header__period {
-  color: var(--accent-primary);
 }
 
 .header__scroll {
@@ -109,7 +106,6 @@
   .header__navlink-mobile {
     display: block;
     background-color: var(--background-tertiary);
-    padding: 12px 24px;
     border-radius: 30px;
     color: var(--text-primary);
     text-align: center;
@@ -117,7 +113,6 @@
     text-decoration: none;
     font-weight: 600;
     transition: background-color 0.3s ease;
-    padding: 10px 20px;
     border: 1px solid var(--accent-primary);
   }
 
@@ -131,5 +126,8 @@
     display: block;
     color: inherit;
     text-decoration: inherit;
+  }
+  .header__link-mobile {
+    padding: 10px 20px;
   }
 }

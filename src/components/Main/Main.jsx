@@ -1,11 +1,12 @@
 import "./Main.css";
-import Section from "../Section/Section";
 import Hero from "../Hero/Hero";
+import About from "../About/About";
 
 function Main({ name }) {
   return (
     <div className="main">
       <Hero />
+      <About />
     </div>
   );
 }

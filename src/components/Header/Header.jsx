@@ -3,11 +3,12 @@ import logo from "../../assets/cclogo.png";
 import { BiMenuAltRight } from "react-icons/bi";
 import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
+import Period from "../Period/Period";
 
 function Header() {
   const [open, setOpen] = useState(false);
   const [isResizing, setIsResizing] = useState(false);
-  const [isScrollingDown, setIsScrollingDown] = useState("false");
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
   const { scrollY } = useScroll();
   const [isGreaterThanThreshold, setIsGreaterThanThreshold] = useState(false);
 
@@ -17,6 +18,10 @@ function Header() {
       setIsGreaterThanThreshold(true);
     } else {
       setIsGreaterThanThreshold(false);
+    }
+
+    if (open) {
+      setOpen(false);
     }
 
     if (latest > prev && latest > 100) {
@@ -91,6 +96,7 @@ function Header() {
   return (
     <motion.div
       variants={{ visible: { y: 0 }, hidden: { y: "-100%" } }}
+      initial={"visible"}
       animate={isScrollingDown ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className={`header ${isGreaterThanThreshold ? "header__scroll" : ""}`}
@@ -101,22 +107,25 @@ function Header() {
           <ul className="header__nav-links">
             <li className="header__navlink">
               <a className="header__link" href="#hero">
-                Home<span className="header__period">.</span>
+                Home
+                <Period />
               </a>
             </li>
             <li className="header__navlink">
               <a className="header__link" href="#about">
-                About<span className="header__period">.</span>
+                About <Period />
               </a>
             </li>
             <li className="header__navlink">
               <a className="header__link" href="#projects">
-                Projects<span className="header__period">.</span>
+                Projects
+                <Period />
               </a>
             </li>
             <li className="header__navlink">
               <a className="header__link" href="#contact">
-                Contact<span className="header__period">.</span>
+                Contact
+                <Period />
               </a>
             </li>
           </ul>
@@ -135,41 +144,38 @@ function Header() {
               variants={childVariants}
               whileHover={{ scale }}
               layout
-              href="#"
               className="header__navlink-mobile"
             >
               <a className="header__link-mobile" href="#hero">
-                Home<span className="header__period">.</span>
+                Home
+                <Period />
               </a>
             </motion.li>
             <motion.li
               variants={childVariants}
               whileHover={{ scale }}
-              href="#"
               className="header__navlink-mobile"
             >
               <a className="header__link-mobile" href="#about">
-                About<span className="header__period">.</span>
+                About <Period />
               </a>
             </motion.li>
             <motion.li
               variants={childVariants}
               whileHover={{ scale }}
-              href="#"
               className="header__navlink-mobile"
             >
               <a className="header__link-mobile" href="#projects">
-                Projects<span className="header__period">.</span>
+                Projects <Period />
               </a>
             </motion.li>
             <motion.li
               variants={childVariants}
               whileHover={{ scale }}
-              href="#"
               className="header__navlink-mobile"
             >
               <a className="header__link-mobile" href="#contact">
-                Contact<span className="header__period">.</span>
+                Contact <Period />
               </a>
             </motion.li>
           </motion.ul>

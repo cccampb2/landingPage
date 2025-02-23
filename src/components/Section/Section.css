@@ -3,12 +3,17 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
   align-items: center;
-  padding: 0 5% 96px;
-  min-height: 100vh;
+  padding: 48px 5%;
+  min-height: 100dvh;
+  will-change: transform, opacity;
 }
 
 .section__hero {
   padding: 156px 5% 96px;
+}
+
+.section__about {
+  grid-template-rows: min-content;
 }
 
 @media (max-width: 1024px) {
