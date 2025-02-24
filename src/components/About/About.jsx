@@ -2,6 +2,27 @@ import Animation from "../Animation/Animation";
 import Period from "../Period/Period";
 import Section from "../Section/Section";
 import "./About.css";
+import { FaHtml5, FaNode, FaReact } from "react-icons/fa6";
+import { FaCss3Alt, FaGitAlt, FaGithub, FaChrome } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/io5";
+import { GrSecure } from "react-icons/gr";
+
+import {
+  SiGnubash,
+  SiBem,
+  SiPrettier,
+  SiExpress,
+  SiMongodb,
+  SiPostman,
+  SiJest,
+  SiEslint,
+  SiNginx,
+  SiPm2,
+  SiWebpack,
+  SiFigma,
+} from "react-icons/si";
+
+import Tag from "../Tag/Tag";
 
 function About() {
   return (
@@ -36,6 +57,32 @@ function About() {
             my passion and technical skills to make meaningful contributions to
             a dynamic team.
           </p>
+        </Animation>
+        <Animation>
+          <div className="about__tags">
+            <Tag name={"HTML"} ReactIcon={FaHtml5} />
+            <Tag name={"CSS"} ReactIcon={FaCss3Alt} />
+            <Tag name={"JavaScript"} ReactIcon={IoLogoJavascript} />
+            <Tag name={"Git"} ReactIcon={FaGitAlt} />
+            <Tag name={"GitHub"} ReactIcon={FaGithub} />
+            <Tag name={"Chrome Devtools"} ReactIcon={FaChrome} />
+            <Tag name={"Bash"} ReactIcon={SiGnubash} />
+            <Tag name={"BEM"} ReactIcon={SiBem} />
+            <Tag name={"Prettier"} ReactIcon={SiPrettier} />
+            <Tag name={"React"} ReactIcon={FaReact} />
+            <Tag name={"Node JS"} ReactIcon={FaNode} />
+            <Tag name={"Express JS"} ReactIcon={SiExpress} />
+            <Tag name={"MongoDB"} ReactIcon={SiMongodb} />
+            <Tag name={"Postman"} ReactIcon={SiPostman} />
+            <Tag name={"Jest"} ReactIcon={SiJest} />
+            <Tag name={"ESLint"} ReactIcon={SiEslint} />
+            <Tag name={"Nginx"} ReactIcon={SiNginx} />
+            <Tag name={"PM 2"} ReactIcon={SiPm2} />
+            <Tag name={"Nginx"} ReactIcon={SiNginx} />
+            <Tag name={"Certbot"} ReactIcon={GrSecure} />
+            <Tag name={"Webpack"} ReactIcon={SiWebpack} />
+            <Tag name={"Figma"} ReactIcon={SiFigma} />
+          </div>
         </Animation>
       </div>
     </Section>

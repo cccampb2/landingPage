@@ -1,19 +1,9 @@
 import "./Tag.css";
 
-function Tag({ background, ReactIcon, name, href }) {
+function Tag({ ReactIcon, name }) {
   return (
-    <div>
-      <a
-        href={href}
-        className="tag"
-        target="_blank"
-        onMouseEnter={(e) =>
-          (e.currentTarget.style.backgroundColor = background)
-        }
-        onMouseLeave={(e) =>
-          (e.currentTarget.style.backgroundColor = "var(--background-tertiary)")
-        }
-      >
+    <div style={{ width: "fit-content" }}>
+      <a className="tag" target="_blank">
         {name}
         <ReactIcon />
       </a>

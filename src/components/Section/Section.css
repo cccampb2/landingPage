@@ -8,10 +8,6 @@
   will-change: transform, opacity;
 }
 
-.section__hero {
-  padding: 156px 5% 96px;
-}
-
 .section__about {
   grid-template-rows: min-content;
 }
