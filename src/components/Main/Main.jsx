@@ -2,7 +2,7 @@ import "./Main.css";
 import Hero from "../Hero/Hero";
 import About from "../About/About";
 
-function Main({ name }) {
+function Main() {
   return (
     <div className="main">
       <Hero />

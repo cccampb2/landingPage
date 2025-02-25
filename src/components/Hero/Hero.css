@@ -115,9 +115,6 @@
     flex-direction: row;
     align-self: start;
   }
-  .hero__cta-btn {
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -138,10 +135,6 @@
   }
   .hero__tagline {
     font-size: 16px;
-  }
-
-  .hero__cta-btn {
-    font-size: 12px;
   }
 }
 

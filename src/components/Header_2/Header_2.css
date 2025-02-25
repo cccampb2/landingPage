@@ -9,12 +9,12 @@
   color: var(--text-primary);
   padding: 12px 20px;
   top: 24px;
-  left: calc(50% - 200px);
   display: flex;
   height: 60px;
   align-items: center;
   justify-content: space-between;
-  width: 400px;
+  width: calc(100% - 64px);
+  max-width: 1440px;
   z-index: 999;
 }
 
@@ -68,11 +68,21 @@
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .header-2 {
+    width: calc(100% - 48px);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-2 {
+    width: calc(100% - 40px);
+  }
+}
+
 @media (max-width: 480px) {
   .header-2 {
-    width: 90%;
-    left: 5%;
-    right: 5%;
+    width: calc(100% - 32px);
   }
   .header__logo-2 {
     display: none;
