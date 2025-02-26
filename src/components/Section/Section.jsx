@@ -1,11 +1,10 @@
 import "./Section.css";
+import React from "react";
 
-function Section({ name, children, id }) {
-  return (
-    <section id={id} className={`section section__${name}`}>
-      {children}
-    </section>
-  );
-}
+const Section = React.forwardRef(({ id, name, children }, ref) => (
+  <section ref={ref} id={id} className={`section section__${name}`}>
+    {children}
+  </section>
+));
 
 export default Section;

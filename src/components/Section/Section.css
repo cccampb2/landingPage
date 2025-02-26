@@ -8,8 +8,13 @@
   will-change: transform, opacity;
 }
 
-.section__about {
+.section__about,
+.section__experience {
   grid-template-rows: min-content;
+}
+
+.section__experience {
+  height: 300dvh;
 }
 
 @media (max-width: 1024px) {
