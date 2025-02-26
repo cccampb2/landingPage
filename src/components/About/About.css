@@ -17,12 +17,6 @@
   align-self: start;
 }
 
-.divider {
-  height: 2px;
-  background-color: var(--divider-color);
-  width: 100%;
-}
-
 .about__content {
   grid-column: span 6;
   color: var(--text-primary);
@@ -44,4 +38,67 @@
   flex-wrap: wrap;
   align-self: start;
   gap: 8px;
+}
+
+.about__content-heading {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.about__career-content {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.about__skill {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 20px 0;
+}
+
+.about__skill-accent {
+  font-weight: 600;
+  color: var(--accent-primary);
+}
+
+@media (max-width: 1024px) {
+  .about__heading {
+    grid-column: span 6;
+  }
+  .about__content {
+    grid-column: span 6;
+  }
+  .about__description,
+  .about__career-content,
+  .about__skill {
+    margin: 24px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__heading {
+    grid-column: span 2;
+  }
+
+  .about__content {
+    grid-column: span 2;
+  }
+
+  .about__description,
+  .about__career-content,
+  .about__skill {
+    margin: 16px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__heading {
+    grid-column: span 1;
+  }
+  .about__content {
+    grid-column: span 1;
+  }
 }
