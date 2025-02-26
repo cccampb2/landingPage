@@ -2,26 +2,7 @@ import Animation from "../Animation/Animation";
 import Period from "../Period/Period";
 import Section from "../Section/Section";
 import "./About.css";
-import { FaHtml5, FaNode, FaReact } from "react-icons/fa6";
-import { FaCss3Alt, FaGitAlt, FaGithub, FaChrome } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { GrSecure } from "react-icons/gr";
 import Divider from "../Divider/Divider";
-
-import {
-  SiGnubash,
-  SiBem,
-  SiPrettier,
-  SiExpress,
-  SiMongodb,
-  SiPostman,
-  SiJest,
-  SiEslint,
-  SiNginx,
-  SiPm2,
-  SiWebpack,
-  SiFigma,
-} from "react-icons/si";
 
 import Tag from "../Tag/Tag";
 

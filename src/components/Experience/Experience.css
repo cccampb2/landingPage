@@ -46,3 +46,55 @@
   left: calc(50% - 6px);
   z-index: 1;
 }
+
+.experience__content {
+  grid-column: span 11;
+  color: var(--text-primary);
+  font-family: "AfacadFlux", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.5;
+  align-self: start;
+}
+
+.experience__panel {
+  background-color: var(--background-tertiary);
+  padding: 32px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.experience__tags {
+  grid-column: span 6;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  align-self: start;
+  gap: 8px;
+}
+.panel__heading {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.panel__company-year,
+.panel__role-location {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.panel__company {
+  font-weight: 700;
+  font-size: 28px;
+}
+.panel__role {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.panel__accent {
+  color: var(--accent-primary);
+}
