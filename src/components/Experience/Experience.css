@@ -58,7 +58,7 @@
 }
 
 .experience__panel {
-  background-color: var(--background-tertiary);
+  outline: 2px solid var(--background-tertiary);
   padding: 32px;
   border-radius: 10px;
   margin-bottom: 24px;
@@ -97,4 +97,27 @@
 
 .panel__accent {
   color: var(--accent-primary);
+}
+
+.experience__projects {
+}
+
+.experience__project-heading {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.experience__project-content {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

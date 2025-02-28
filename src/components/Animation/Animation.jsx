@@ -7,7 +7,6 @@ function Animation({ children, width = "fit-content" }) {
   const isInView = useInView(ref, { once: true });
 
   const control = useAnimation();
-  const slideControl = useAnimation();
 
   useEffect(() => {
     if (isInView) {

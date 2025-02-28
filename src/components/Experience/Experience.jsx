@@ -25,6 +25,12 @@ import {
   SiWebpack,
   SiFigma,
 } from "react-icons/si";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import sprint_1 from "../../assets/sprint-1.png";
+import sprint_2 from "../../assets/sprint-2.png";
+import sprint_3 from "../../assets/sprint-3.png";
+import sprint_7 from "../../assets/sprint-7.png";
+import sprint_10 from "../../assets/sprint-10.png";
 
 function Experience() {
   const [height, setHeight] = useState(0);
@@ -37,7 +43,7 @@ function Experience() {
 
   useEffect(() => {
     setHeight(trackerPath.current.clientHeight);
-  }, [trackerPath]);
+  });
 
   const y = useTransform(scrollYProgress, [0, 1], [0, height]);
 
@@ -103,6 +109,8 @@ function Experience() {
               <Tag name={"Jest"} ReactIcon={SiJest} />
             </div>
           </div>
+        </Animation>
+        <Animation>
           <div className="experience__panel">
             <div className="panel__company-year">
               <div className="panel__company">Qualitest Group</div>
@@ -124,6 +132,62 @@ function Experience() {
             </p>
           </div>
         </Animation>
+        <div className="experience__projects">
+          <Animation width={"100%"}>
+            <h3 className="experience__project-heading">Projects</h3>
+          </Animation>
+          <div className="experience__project-content">
+            <Animation>
+              <div className="experience__card">
+                <ProjectCard
+                  image={sprint_1}
+                  title={"TripleTen Library"}
+                  description={"Description text"}
+                />
+              </div>
+            </Animation>
+            <Animation>
+              <div className="experience__card">
+                <ProjectCard
+                  image={sprint_2}
+                  link={"https://github.com/cccampb2/se_project_coffeeshop"}
+                  title={"TripleTen Coffee Shop"}
+                  description={"Description text"}
+                />
+              </div>
+            </Animation>
+            <Animation>
+              <div className="experience__card">
+                <ProjectCard
+                  image={sprint_3}
+                  link={"https://github.com/cccampb2/se_project_spots"}
+                  title={"Spots"}
+                  description={"Description text"}
+                />
+              </div>
+            </Animation>
+            <Animation>
+              <div className="experience__card">
+                <ProjectCard
+                  image={sprint_7}
+                  title={"Simple Todo App"}
+                  link={"https://github.com/cccampb2/se_project_todo-app"}
+                  description={"Description text"}
+                />
+              </div>
+            </Animation>
+            <Animation>
+              <div className="experience__card">
+                <ProjectCard
+                  image={sprint_10}
+                  link={"https://github.com/cccampb2/se_project_react"}
+                  title={"What to Wear (WTWR)"}
+                  description={"Description text"}
+                />
+              </div>
+            </Animation>
+          </div>
+        </div>
       </div>
     </Section>
   );
