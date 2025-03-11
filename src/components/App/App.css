@@ -19,10 +19,6 @@
   --button-text: var(--text-primary); /* White Text on Buttons */
   --border-color: #262626; /* Darker Gray for Borders */
   --divider-color: #262626; /* Dark Gray - Soft & Minimal */
-
-  /* Social Media Colors */
-  --linkedin-color: #0077b5; /* LinkedIn Blue */
-  --github-color: #238636; /* GitHub Dark Gray */
 }
 
 * {
