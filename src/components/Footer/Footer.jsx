@@ -6,14 +6,14 @@ function Footer() {
     <footer className="footer">
       <div className="footer__links">
         <a
-          href="https://www.linkedin.com/in/calebccampbell"
+          href="https://github.com/cccampb2/cccampb2"
           target="_blank"
           className="footer__link"
         >
           <FaGithub size={30} />
         </a>
         <a
-          href="https://github.com/cccampb2/cccampb2"
+          href="https://www.linkedin.com/in/calebccampbell"
           target="_blank"
           className="footer__link"
         >
