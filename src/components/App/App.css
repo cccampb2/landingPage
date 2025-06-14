@@ -10,8 +10,7 @@
   --text-muted: #8c8c8c; /* Muted Gray - Subtle Text */
 
   /* Accent Colors */
-  --accent-primary: #00ffff; /* Neon Cyan - Highlights, Hover Effects */
-  --accent-secondary: #00d9d9; /* Slightly Darker Cyan */
+  --accent-primary: #fe6807; /* Neon Cyan - Highlights, Hover Effects */
 
   /* Button & UI Colors */
   --button-background: #1a1a1a; /* Dark Gray - Default Button */

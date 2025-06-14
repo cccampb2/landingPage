@@ -9,7 +9,8 @@
 }
 
 .section__about,
-.section__experience {
+.section__experience,
+.section__contact {
   grid-template-rows: min-content;
 }
 

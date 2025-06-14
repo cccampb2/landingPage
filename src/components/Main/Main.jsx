@@ -2,6 +2,7 @@ import "./Main.css";
 import Hero from "../Hero/Hero";
 import About from "../About/About";
 import Experience from "../Experience/Experience";
+import ContactMe from "../Contact Me/ContactMe";
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
       <Hero />
       <About />
       <Experience />
+      <ContactMe />
     </div>
   );
 }
