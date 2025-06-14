@@ -4,7 +4,17 @@ import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = React.forwardRef(
   ({ title, description, image, link }, cardRef) => (
-    <div ref={cardRef} class="card">
+    <div className="card">
+      <div className="card__content">
+        <img src={image} alt={title} className="card__fron-content" />
+        <div className="card__back-content">
+          <p className="card__heading">{title}</p>
+          <p className="card__desc">{description}</p>
+        </div>
+      </div>
+    </div>
+    /*
+    <div  class="card">
       <img src={image} alt={`${title} image`} className="card__image" />
       <div class="card__content">
         <p class="card__title">{title}</p>
@@ -16,6 +26,7 @@ const ProjectCard = React.forwardRef(
         )}
       </div>
     </div>
+    */
   )
 );
 
