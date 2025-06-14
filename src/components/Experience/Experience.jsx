@@ -96,6 +96,29 @@ function Experience() {
         <Animation>
           <div className="experience__panel">
             <div className="panel__company-year">
+              <div className="panel__company">
+                Kernersville Police Department
+              </div>
+              <div className="panel__year">December 2023 - August 2024</div>
+            </div>
+            <div className="panel__role-location">
+              <div className="panel__role">
+                <span className="panel__accent">Police Officer</span>
+              </div>
+              <div className="panel__location">Kernersville, NC</div>
+            </div>
+            <p className="panel__content">
+              Utilizes problem-solving skills to analyze complex situations and
+              make critical decisions under pressure; communicates with diverse
+              populations to de-escalate conflicts and maintain public safety;
+              adapts to changing environments and technologies to implement
+              crime prevention strategies.
+            </p>
+          </div>
+        </Animation>
+        <Animation>
+          <div className="experience__panel">
+            <div className="panel__company-year">
               <div className="panel__company">Qualitest Group</div>
               <div className="panel__year">August 2021 - August 2023</div>
             </div>
