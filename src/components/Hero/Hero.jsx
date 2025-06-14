@@ -2,6 +2,7 @@ import "./Hero.css";
 import Section from "../Section/Section";
 
 import Period from "../Period/Period";
+import resume from "../../assets/resume.pdf";
 
 function Hero() {
   return (
@@ -20,9 +21,16 @@ function Hero() {
           Turning coffee into code, one line at a time.
         </p>
         <div className="hero__buttons">
-          <button className="hero__cta-btn" role="button">
-            My Resume
-          </button>
+          <a
+            className="hero__ctn-btn-link"
+            href={resume}
+            target="_blank"
+            download="ResumeOfCalebCampbell"
+          >
+            <button className="hero__cta-btn" role="button">
+              My Resume
+            </button>
+          </a>
 
           <button className="hero__cta-btn" role="button">
             Let's Connect
