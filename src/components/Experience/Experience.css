@@ -81,9 +81,10 @@
 
 .experience__project-content {
   display: flex;
-  gap: 24px;
-  flex-direction: column;
+  gap: 16px;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .experience__card {

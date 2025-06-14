@@ -3,9 +3,6 @@ import "./Experience.css";
 import Period from "../Period/Period";
 import Animation from "../Animation/Animation";
 import Divider from "../Divider/Divider";
-import { motion, useTransform } from "framer-motion";
-import { useScroll } from "motion/react";
-import { useEffect, useRef, useState } from "react";
 import Tag from "../Tag/Tag";
 import { FaHtml5, FaNode, FaReact } from "react-icons/fa6";
 import { FaCss3Alt, FaGitAlt, FaGithub, FaChrome } from "react-icons/fa";
@@ -26,11 +23,10 @@ import {
   SiFigma,
 } from "react-icons/si";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import sprint_1 from "../../assets/sprint-1.png";
-import sprint_2 from "../../assets/sprint-2.png";
-import sprint_3 from "../../assets/sprint-3.png";
-import sprint_7 from "../../assets/sprint-7.png";
-import sprint_10 from "../../assets/sprint-10.png";
+import sprint2 from "../../assets/sprint-2.png";
+import sprint3 from "../../assets/sprint-3.png";
+import sprint10 from "../../assets/sprint-10.png";
+import finalsprint from "../../assets/finalsprint.png";
 
 function Experience() {
   return (
@@ -146,49 +142,45 @@ function Experience() {
             <Animation>
               <div className="experience__card">
                 <ProjectCard
-                  image={sprint_1}
-                  title={"TripleTen Library"}
-                  description={"Description text"}
-                />
-              </div>
-            </Animation>
-            <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  image={sprint_2}
+                  title={"Triple Peaks Coffee Shop"}
+                  description={`This is the second project of the Software Engineering program at
+            TripleTen. This project was built to demonstrate my growth in HTML
+            and CSS. The design closely follows the Figma layout provided to us
+            for reference.`}
+                  image={sprint2}
                   link={"https://github.com/cccampb2/se_project_coffeeshop"}
-                  title={"TripleTen Coffee Shop"}
-                  description={"Description text"}
                 />
               </div>
             </Animation>
             <Animation>
               <div className="experience__card">
                 <ProjectCard
-                  image={sprint_3}
-                  link={"https://github.com/cccampb2/se_project_spots"}
                   title={"Spots"}
-                  description={"Description text"}
+                  description={`This project was completed to showcase my ability to use the grid layout and media queries. The technologies used to complete the project were Figma for design planning, HTML and CSS for structure and styling, and Chrome’s DevTools for testing and debugging.`}
+                  image={sprint3}
+                  link={"https://github.com/cccampb2/se_project_spots"}
                 />
               </div>
             </Animation>
             <Animation>
               <div className="experience__card">
                 <ProjectCard
-                  image={sprint_7}
-                  title={"Simple Todo App"}
-                  link={"https://github.com/cccampb2/se_project_todo-app"}
-                  description={"Description text"}
-                />
-              </div>
-            </Animation>
-            <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  image={sprint_10}
+                  title={"What To Wear (WTWR)"}
+                  description={`WTWR (What To Wear) is a full-stack React app that helps users pick outfits based on local weather. Users can view, add, and manage weather-specific clothing on their profile.
+
+The app features JWT-based authentication, a responsive React front end, and a Node.js/Express backend with MongoDB for data storage.`}
+                  image={sprint10}
                   link={"https://github.com/cccampb2/se_project_react"}
-                  title={"What to Wear (WTWR)"}
-                  description={"Description text"}
+                />
+              </div>
+            </Animation>
+            <Animation>
+              <div className="experience__card">
+                <ProjectCard
+                  title={"NewsExplorer"}
+                  description={`NewsExplorer is a React application that enables users to search for news articles by keyword using a news API. Users can also save articles to view later on their ‘Saved Articles’ page. It is a full-stack application with a mocked backend and is fully responsive across all screen sizes.`}
+                  image={finalsprint}
+                  link={"https://github.com/cccampb2/se-final-project"}
                 />
               </div>
             </Animation>
