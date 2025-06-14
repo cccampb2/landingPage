@@ -33,22 +33,8 @@ import sprint_7 from "../../assets/sprint-7.png";
 import sprint_10 from "../../assets/sprint-10.png";
 
 function Experience() {
-  const [height, setHeight] = useState(0);
-  const experienceRef = useRef(null);
-  const trackerPath = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: experienceRef,
-    offset: ["start start", "end end"],
-  });
-
-  useEffect(() => {
-    setHeight(trackerPath.current.clientHeight);
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [0, height]);
-
   return (
-    <Section ref={experienceRef} name={"experience"} id={"experience"}>
+    <Section name={"experience"} id={"experience"}>
       <h2 className="experience__heading">
         <div className="experience__heading-content">
           <Animation>
@@ -58,9 +44,6 @@ function Experience() {
         </div>
         <Divider />
       </h2>
-      <div ref={trackerPath} className="experience__line">
-        <motion.div style={{ y }} className="experience__tracker"></motion.div>
-      </div>
       <div className="experience__content">
         <Animation>
           <div className="experience__panel">
