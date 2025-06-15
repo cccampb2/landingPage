@@ -136,53 +136,44 @@ function Experience() {
         </Animation>
         <div className="experience__projects">
           <Animation width={"100%"}>
-            <h3 className="experience__project-heading">Projects</h3>
+            <h3 className="experience__project-heading">
+              Projects
+              <Period />
+            </h3>
           </Animation>
           <div className="experience__project-content">
             <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  title={"Triple Peaks Coffee Shop"}
-                  description={`This is the second project of the Software Engineering program at
+              <ProjectCard
+                title={"Triple Peaks Coffee Shop"}
+                link={"https://github.com/cccampb2/se_project_coffeeshop"}
+                description={`This is the second project of the Software Engineering program at
             TripleTen. This project was built to demonstrate my growth in HTML
             and CSS. The design closely follows the Figma layout provided to us
             for reference.`}
-                  image={sprint2}
-                  link={"https://github.com/cccampb2/se_project_coffeeshop"}
-                />
-              </div>
+              />
             </Animation>
             <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  title={"Spots"}
-                  description={`This project was completed to showcase my ability to use the grid layout and media queries. The technologies used to complete the project were Figma for design planning, HTML and CSS for structure and styling, and Chrome’s DevTools for testing and debugging.`}
-                  image={sprint3}
-                  link={"https://github.com/cccampb2/se_project_spots"}
-                />
-              </div>
+              <ProjectCard
+                title={"Spots"}
+                link={"https://github.com/cccampb2/se_project_spots"}
+                description={`This project was completed to showcase my ability to use the grid layout and media queries. The technologies used to complete the project were Figma for design planning, HTML and CSS for structure and styling, and Chrome’s DevTools for testing and debugging.`}
+              />
             </Animation>
             <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  title={"What To Wear (WTWR)"}
-                  description={`WTWR (What To Wear) is a full-stack React app that helps users pick outfits based on local weather. Users can view, add, and manage weather-specific clothing on their profile.
+              <ProjectCard
+                title={"What To Wear"}
+                link={"https://github.com/cccampb2/se_project_react"}
+                description={`WTWR (What To Wear) is a full-stack React app that helps users pick outfits based on local weather. Users can view, add, and manage weather-specific clothing on their profile.
 
 The app features JWT-based authentication, a responsive React front end, and a Node.js/Express backend with MongoDB for data storage.`}
-                  image={sprint10}
-                  link={"https://github.com/cccampb2/se_project_react"}
-                />
-              </div>
+              />
             </Animation>
             <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  title={"NewsExplorer"}
-                  description={`NewsExplorer is a React application that enables users to search for news articles by keyword using a news API. Users can also save articles to view later on their ‘Saved Articles’ page. It is a full-stack application with a mocked backend and is fully responsive across all screen sizes.`}
-                  image={finalsprint}
-                  link={"https://github.com/cccampb2/se-final-project"}
-                />
-              </div>
+              <ProjectCard
+                title={"NewsExplorer"}
+                link={"https://github.com/cccampb2/se-final-project"}
+                description={`NewsExplorer is a React application that enables users to search for news articles by keyword using a news API. Users can also save articles to view later on their ‘Saved Articles’ page. It is a full-stack application with a mocked backend and is fully responsive across all screen sizes.`}
+              />
             </Animation>
           </div>
         </div>
