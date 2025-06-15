@@ -71,6 +71,7 @@ function ContactMe() {
           ></input>
           <input type="hidden" name="_captcha" value="false"></input>
           <label className="contact__form-label">
+            Name*
             <input
               className="contact__form-input"
               type="text"
@@ -80,7 +81,7 @@ function ContactMe() {
             />
           </label>
           <label className="contact__form-label">
-            {" "}
+            Email*
             <input
               className="contact__form-input"
               type="email"
@@ -90,7 +91,7 @@ function ContactMe() {
             />
           </label>
           <label className="contact__form-label">
-            {" "}
+            Message*
             <textarea
               className="contact__form-textarea"
               type="text"

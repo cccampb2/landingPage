@@ -96,6 +96,8 @@
   width: 50%;
   display: flex;
   justify-content: center;
+  color: var(--accent-primary);
+  display: block;
 }
 
 .contact__form-input {
@@ -107,9 +109,11 @@
   background-color: transparent;
   border: 2px solid var(--background-tertiary);
   outline: none;
+  margin-top: 8px;
 }
 
 .contact__form-textarea {
+  margin-top: 8px;
   width: 100%;
   padding: 12px 16px;
   border-radius: 8px;
@@ -145,7 +149,6 @@
 }
 
 .contact__form-btn:active {
-  background-color: var(--button-click);
   transform: scale(0.95) rotateZ(1.7deg);
 }
 
