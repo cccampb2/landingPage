@@ -145,6 +145,11 @@
   color: var(--background-primary);
 }
 
+.contact__form-btn:active {
+  background-color: var(--button-click);
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+
 @keyframes underline {
   0% {
     transform: translateX(-100%);
