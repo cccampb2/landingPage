@@ -130,19 +130,18 @@
 
 .contact__form-btn {
   outline: none;
-  background-color: var(--button-background);
+  background-color: var(--accent-primary);
   border: none;
   width: 25%;
   padding: 12px 16px;
   border-radius: 8px;
-  color: var(--text-primary);
+  color: var(--background-primary);
+  transition: all ease-in-out 0.2s;
 }
 
 .contact__form-btn:hover {
   cursor: pointer;
-  background-color: var(--button-hover);
-  width: 25%;
-  color: var(--background-primary);
+  transform: scale(1.07);
 }
 
 .contact__form-btn:active {
