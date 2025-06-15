@@ -10,8 +10,18 @@ function ContactMe() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    e.target.reset();
-    setFormSubmitted(true);
+    const form = e.target;
+    const formData = new FormData(form);
+
+    return fetch("https://formsubmit.co/calebccampbell19@gmail.com", {
+      method: "POST",
+      body: formData,
+    })
+      .then((res) => {
+        setFormSubmitted(true);
+        form.reset();
+      })
+      .catch(console.error);
   };
 
   useEffect(() => {
@@ -48,12 +58,18 @@ function ContactMe() {
         </div>{" "}
         <form
           onSubmit={handleSubmit}
-          action=""
+          method="POST"
           className={`contact__form ${
             formSubmited ? "contact__form-disabled" : ""
           }`}
         >
           <h3 className="contact__form-heading">Stay In Touch</h3>
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Submission: Someone would like to connect!"
+          ></input>
+          <input type="hidden" name="_captcha" value="false"></input>
           <label className="contact__form-label">
             <input
               className="contact__form-input"

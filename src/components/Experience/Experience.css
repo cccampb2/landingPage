@@ -86,9 +86,3 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.experience__card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}

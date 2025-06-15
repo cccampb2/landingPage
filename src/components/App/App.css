@@ -15,6 +15,7 @@
   /* Button & UI Colors */
   --button-background: #1a1a1a; /* Dark Gray - Default Button */
   --button-hover: var(--accent-primary); /* Neon Cyan for Hover */
+  --button-click: #c75205;
   --button-text: var(--text-primary); /* White Text on Buttons */
   --border-color: #262626; /* Darker Gray for Borders */
   --divider-color: #262626; /* Dark Gray - Soft & Minimal */
