@@ -31,10 +31,12 @@ function Hero() {
               My Resume
             </button>
           </a>
-
-          <button className="hero__cta-btn" role="button">
-            Let's Connect
-          </button>
+          <a href="#contact" className="hero__ctn-btn-link">
+            {" "}
+            <button className="hero__cta-btn" role="button">
+              Let's Connect
+            </button>
+          </a>
         </div>
       </div>
       <div className="hero__avatar"></div>
