@@ -40,7 +40,8 @@
   display: none;
 }
 
-.contact__message-success-submitted {
+.contact__message-success-submitted,
+.contact__loader {
   display: block;
   outline: 2px solid var(--background-tertiary);
   padding: 32px;
