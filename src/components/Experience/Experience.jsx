@@ -3,9 +3,6 @@ import "./Experience.css";
 import Period from "../Period/Period";
 import Animation from "../Animation/Animation";
 import Divider from "../Divider/Divider";
-import { motion, useTransform } from "framer-motion";
-import { useScroll } from "motion/react";
-import { useEffect, useRef, useState } from "react";
 import Tag from "../Tag/Tag";
 import { FaHtml5, FaNode, FaReact } from "react-icons/fa6";
 import { FaCss3Alt, FaGitAlt, FaGithub, FaChrome } from "react-icons/fa";
@@ -26,29 +23,14 @@ import {
   SiFigma,
 } from "react-icons/si";
 import ProjectCard from "../ProjectCard/ProjectCard";
-import sprint_1 from "../../assets/sprint-1.png";
-import sprint_2 from "../../assets/sprint-2.png";
-import sprint_3 from "../../assets/sprint-3.png";
-import sprint_7 from "../../assets/sprint-7.png";
-import sprint_10 from "../../assets/sprint-10.png";
+import sprint2 from "../../assets/sprint-2.png";
+import sprint3 from "../../assets/sprint-3.png";
+import sprint10 from "../../assets/sprint-10.png";
+import finalsprint from "../../assets/finalsprint.png";
 
 function Experience() {
-  const [height, setHeight] = useState(0);
-  const experienceRef = useRef(null);
-  const trackerPath = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: experienceRef,
-    offset: ["start start", "end end"],
-  });
-
-  useEffect(() => {
-    setHeight(trackerPath.current.clientHeight);
-  });
-
-  const y = useTransform(scrollYProgress, [0, 1], [0, height]);
-
   return (
-    <Section ref={experienceRef} name={"experience"} id={"experience"}>
+    <Section name={"experience"} id={"experience"}>
       <h2 className="experience__heading">
         <div className="experience__heading-content">
           <Animation>
@@ -58,9 +40,6 @@ function Experience() {
         </div>
         <Divider />
       </h2>
-      <div ref={trackerPath} className="experience__line">
-        <motion.div style={{ y }} className="experience__tracker"></motion.div>
-      </div>
       <div className="experience__content">
         <Animation>
           <div className="experience__panel">
@@ -113,6 +92,29 @@ function Experience() {
         <Animation>
           <div className="experience__panel">
             <div className="panel__company-year">
+              <div className="panel__company">
+                Kernersville Police Department
+              </div>
+              <div className="panel__year">December 2023 - August 2024</div>
+            </div>
+            <div className="panel__role-location">
+              <div className="panel__role">
+                <span className="panel__accent">Police Officer</span>
+              </div>
+              <div className="panel__location">Kernersville, NC</div>
+            </div>
+            <p className="panel__content">
+              Utilizes problem-solving skills to analyze complex situations and
+              make critical decisions under pressure; communicates with diverse
+              populations to de-escalate conflicts and maintain public safety;
+              adapts to changing environments and technologies to implement
+              crime prevention strategies.
+            </p>
+          </div>
+        </Animation>
+        <Animation>
+          <div className="experience__panel">
+            <div className="panel__company-year">
               <div className="panel__company">Qualitest Group</div>
               <div className="panel__year">August 2021 - August 2023</div>
             </div>
@@ -134,57 +136,44 @@ function Experience() {
         </Animation>
         <div className="experience__projects">
           <Animation width={"100%"}>
-            <h3 className="experience__project-heading">Projects</h3>
+            <h3 className="experience__project-heading">
+              Projects
+              <Period />
+            </h3>
           </Animation>
           <div className="experience__project-content">
             <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  image={sprint_1}
-                  title={"TripleTen Library"}
-                  description={"Description text"}
-                />
-              </div>
+              <ProjectCard
+                title={"Triple Peaks Coffee Shop"}
+                link={"https://github.com/cccampb2/se_project_coffeeshop"}
+                description={`This is the second project of the Software Engineering program at
+            TripleTen. This project was built to demonstrate my growth in HTML
+            and CSS. The design closely follows the Figma layout provided to us
+            for reference.`}
+              />
             </Animation>
             <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  image={sprint_2}
-                  link={"https://github.com/cccampb2/se_project_coffeeshop"}
-                  title={"TripleTen Coffee Shop"}
-                  description={"Description text"}
-                />
-              </div>
+              <ProjectCard
+                title={"Spots"}
+                link={"https://github.com/cccampb2/se_project_spots"}
+                description={`This project was completed to showcase my ability to use the grid layout and media queries. The technologies used to complete the project were Figma for design planning, HTML and CSS for structure and styling, and Chrome’s DevTools for testing and debugging.`}
+              />
             </Animation>
             <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  image={sprint_3}
-                  link={"https://github.com/cccampb2/se_project_spots"}
-                  title={"Spots"}
-                  description={"Description text"}
-                />
-              </div>
+              <ProjectCard
+                title={"What To Wear"}
+                link={"https://github.com/cccampb2/se_project_react"}
+                description={`WTWR (What To Wear) is a full-stack React app that helps users pick outfits based on local weather. Users can view, add, and manage weather-specific clothing on their profile.
+
+The app features JWT-based authentication, a responsive React front end, and a Node.js/Express backend with MongoDB for data storage.`}
+              />
             </Animation>
             <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  image={sprint_7}
-                  title={"Simple Todo App"}
-                  link={"https://github.com/cccampb2/se_project_todo-app"}
-                  description={"Description text"}
-                />
-              </div>
-            </Animation>
-            <Animation>
-              <div className="experience__card">
-                <ProjectCard
-                  image={sprint_10}
-                  link={"https://github.com/cccampb2/se_project_react"}
-                  title={"What to Wear (WTWR)"}
-                  description={"Description text"}
-                />
-              </div>
+              <ProjectCard
+                title={"NewsExplorer"}
+                link={"https://github.com/cccampb2/se-final-project"}
+                description={`NewsExplorer is a React application that enables users to search for news articles by keyword using a news API. Users can also save articles to view later on their ‘Saved Articles’ page. It is a full-stack application with a mocked backend and is fully responsive across all screen sizes.`}
+              />
             </Animation>
           </div>
         </div>

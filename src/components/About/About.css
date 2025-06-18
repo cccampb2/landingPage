@@ -11,7 +11,7 @@
   font-weight: 600;
   margin-bottom: 16px;
   display: flex;
-  grid-column: span 12;
+  grid-column: 1/-1;
   align-items: center;
   gap: 24px;
   align-self: start;
@@ -55,12 +55,6 @@
 }
 
 @media (max-width: 1024px) {
-  .about__heading {
-    grid-column: span 6;
-  }
-  .about__content {
-    grid-column: span 6;
-  }
   .about__description,
   .about__career-content,
   .about__skill {
@@ -69,18 +63,13 @@
 }
 
 @media (max-width: 768px) {
-  .about__heading {
-    grid-column: span 2;
-  }
-
-  .about__content {
-    grid-column: span 2;
-  }
-
   .about__description,
   .about__career-content,
   .about__skill {
     margin: 16px 0;
+  }
+  .about__content {
+    grid-column: span 2;
   }
 }
 
