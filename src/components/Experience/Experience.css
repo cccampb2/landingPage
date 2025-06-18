@@ -7,7 +7,7 @@
   font-weight: 600;
   margin-bottom: 16px;
   display: flex;
-  grid-column: span 12;
+  grid-column: 1/-1;
   align-items: center;
   gap: 24px;
   align-self: start;
@@ -18,7 +18,7 @@
 }
 
 .experience__content {
-  grid-column: span 12;
+  grid-column: 1/-1;
   color: var(--text-primary);
   font-family: "AfacadFlux", sans-serif;
   font-size: 18px;
@@ -85,4 +85,21 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 768px) {
+  .experience__content {
+    grid-column: 1/-1;
+  }
+  .panel__company-year,
+  .panel__role-location {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .experience__heading {
+    grid-column: span 1;
+  }
 }

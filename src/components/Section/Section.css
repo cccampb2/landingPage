@@ -33,6 +33,7 @@
     .section {
       grid-template-columns: 1fr;
       gap: 8px;
+      padding: 64px 0;
     }
   }
 }

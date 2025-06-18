@@ -7,7 +7,7 @@
   font-weight: 600;
   margin-bottom: 16px;
   display: flex;
-  grid-column: span 12;
+  grid-column: 1/-1;
   align-items: center;
   gap: 24px;
   align-self: start;
@@ -159,5 +159,14 @@
   }
   100% {
     transform: translateX(100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__form-label {
+    width: 100%;
+  }
+  .contact__form-btn {
+    width: 100%;
   }
 }
