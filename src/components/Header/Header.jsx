@@ -28,37 +28,39 @@ function Header() {
           </a>
         </div>
       </nav>
-      <IconContext.Provider value={{ size: "100%" }}>
+      <IconContext.Provider value={{ size: "20px" }}>
         {!isOpen && (
           <div onClick={toggleOpen} className="header-mobile-menu">
             <IoIosMenu />
           </div>
         )}
+      </IconContext.Provider>
 
-        <nav
-          className={`header-mobile ${
-            isOpen ? "header-mobile_open" : "header-mobile_close"
-          }`}
-        >
-          <div onClick={toggleOpen} className="header__icons">
+      <nav
+        className={`header-mobile ${
+          isOpen ? "header-mobile_open" : "header-mobile_close"
+        }`}
+      >
+        <div onClick={toggleOpen} className="header__icons">
+          <IconContext.Provider value={{ size: "30px" }}>
             <div className="header-mobile-close">
               <IoIosClose />
             </div>
-            <a href="#hero" className="header__icon">
-              [Home]
-            </a>
-            <a href="#about" className="header__icon">
-              [About Me]
-            </a>
-            <a href="#experience" className="header__icon">
-              [Experience]
-            </a>
-            <a href="#contact" className="header__icon">
-              [Contact Me]
-            </a>
-          </div>
-        </nav>
-      </IconContext.Provider>
+          </IconContext.Provider>
+          <a href="#hero" className="header__icon">
+            [Home]
+          </a>
+          <a href="#about" className="header__icon">
+            [About Me]
+          </a>
+          <a href="#experience" className="header__icon">
+            [Experience]
+          </a>
+          <a href="#contact" className="header__icon">
+            [Contact Me]
+          </a>
+        </div>
+      </nav>
     </>
   );
 }
