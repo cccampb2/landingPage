@@ -1,39 +1,10 @@
 .section {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 24px;
+  width: 100%;
   align-items: center;
-  padding: 96px 5%;
   min-height: 100dvh;
-  will-change: transform, opacity;
 }
 
-.section__about,
-.section__experience,
-.section__contact {
-  grid-template-rows: min-content;
-}
-
-@media (max-width: 1024px) {
-  .section {
-    grid-template-columns: repeat(6, 1fr);
-    gap: 16px;
-    padding: 80px 5%;
-  }
-}
-
-@media (max-width: 768px) {
-  .section {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-    padding: 64px 5%;
-  }
-
-  @media (max-width: 480px) {
-    .section {
-      grid-template-columns: 1fr;
-      gap: 8px;
-      padding: 64px 0;
-    }
-  }
+.section__hero {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
 }
