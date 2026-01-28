@@ -6,7 +6,15 @@ const Hero = ({}) => {
   return (
     <Section name={"hero"}>
       <div className="hero">
-        <div className="hero__intro">HI, I'M CALEB</div>
+        <div className="hero__intro">
+          <h1 className="hero__title">
+            CALEB <span className="hero__lastName">CAMPBELL</span>
+          </h1>
+          <span className="hero__subtitle">
+            <span className="hero__accent">Software Engineer</span> focused on
+            clean code and great user experiences.
+          </span>
+        </div>
         <div className="hero__avatar">
           <img src={avatar} alt="Caleb-Campbell-Avatar" />
         </div>
