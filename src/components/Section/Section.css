@@ -8,3 +8,8 @@
   background-color: var(--primary-black);
   color: var(--primary-white);
 }
+
+.section__experience {
+  background-color: var(--primary-white);
+  color: var(--primary-black);
+}

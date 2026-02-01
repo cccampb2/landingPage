@@ -1,0 +1,24 @@
+.StaggerAnimation {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  font-weight: 900;
+  font-size: 60px;
+}
+
+.StaggerAnimation__children-1 {
+  color: var(--grey);
+}
+
+.StaggerAnimation__children-2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.StaggerAnimation__letter {
+  display: inline-block;
+}

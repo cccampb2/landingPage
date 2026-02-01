@@ -6,17 +6,13 @@
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  overflow: hidden;
-  gap: 0;
 }
 
 .hero__intro {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   gap: 12px;
 }
 
@@ -35,7 +31,7 @@
 }
 
 .hero__accent {
-  color: #ff4747;
+  color: var(--red);
 }
 
 .hero__lastName {
