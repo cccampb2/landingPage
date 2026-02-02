@@ -9,3 +9,8 @@
   font-style: italic;
   src: url("./fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Warpen";
+  src: url("./fonts/Warpen.ttf") format("truetype");
+}
