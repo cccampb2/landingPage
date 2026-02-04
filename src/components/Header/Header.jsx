@@ -6,7 +6,7 @@ const Header = ({ onOpenModal }) => {
       <div className="header__logo">CALEB</div>
       <nav className="header__nav">
         <button className="header__link" onClick={() => onOpenModal("about")}>
-          About
+          About Me
         </button>
         <button
           className="header__link"

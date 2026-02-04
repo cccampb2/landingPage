@@ -18,6 +18,9 @@
   color: var(--primary-white);
   letter-spacing: -0.5px;
   font-family: "Warpen";
+  position: relative;
+  pointer-events: none;
+  user-select: none;
 }
 
 .header__nav {
@@ -38,6 +41,16 @@
   padding: 0;
 }
 
+.header__logo::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 45%;
+  height: 2px;
+  background: var(--red-hover);
+}
+
 .header__link::after {
   content: "";
   position: absolute;
@@ -47,10 +60,6 @@
   height: 2px;
   background: var(--red-hover);
   transition: width 0.3s ease;
-}
-
-.header__link:hover {
-  color: var(--red-hover);
 }
 
 .header__link:hover::after {
