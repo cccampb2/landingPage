@@ -16,3 +16,9 @@
   background-color: var(--primary-white);
   color: var(--primary-black);
 }
+
+.section__metrics-footer-section {
+  display: flex;
+  flex-direction: column;
+  background: #020202;
+}

@@ -1,9 +1,9 @@
 import "./App.css";
 import Hero from "../Hero/Hero.jsx";
 import Experience from "../Experience/Experience.jsx";
-import Header from "../Header/Header.jsx";
 import Modal from "../Modal/Modal.jsx";
 import { useState } from "react";
+import MetricsFooterSection from "../MetricsFooterSection/MetricsFooterSection.jsx";
 function App() {
   const [activeModal, setActiveModal] = useState(null);
 
@@ -132,6 +132,7 @@ function App() {
       <main className="page__content">
         <Hero onOpenModal={handleOpenModal} />
         <Experience />
+        <MetricsFooterSection />
       </main>
       <Modal
         isOpen={!!activeModal}
