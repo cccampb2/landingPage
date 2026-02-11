@@ -1,47 +1,28 @@
 import "./Hero.css";
 import Section from "../Section/Section";
+import avatar from "../../assets/calebcampbellavatar.png";
+import Header from "../Header/Header";
 
-import Period from "../Period/Period";
-import resume from "../../assets/resume.pdf";
-
-function Hero() {
+const Hero = ({ onOpenModal }) => {
   return (
-    <Section id={"hero"} name={"hero"}>
-      <div className="hero__content">
-        <h1 className="hero__heading">
-          Hi, I'm Caleb
-          <Period />
-        </h1>
-
-        <h2 className="hero__sub-heading">
-          A <span className="hero__accent">Full-Stack Developer</span> and
-          Software Enthusiast.
-        </h2>
-        <p className="hero__tagline">
-          Turning coffee into code, one line at a time.
-        </p>
-        <div className="hero__buttons">
-          <a
-            className="hero__ctn-btn-link"
-            href={resume}
-            target="_blank"
-            download="ResumeOfCalebCampbell"
-          >
-            <button className="hero__cta-btn" role="button">
-              My Resume
-            </button>
-          </a>
-          <a href="#contact" className="hero__ctn-btn-link">
-            {" "}
-            <button className="hero__cta-btn" role="button">
-              Let's Connect
-            </button>
-          </a>
+    <Section data_header={"transparent"} name={"hero"}>
+      <Header onOpenModal={onOpenModal} />
+      <div className="hero">
+        <div className="hero__intro">
+          <h1 className="hero__title">
+            CALEB <span className="hero__lastName">CAMPBELL</span>
+          </h1>
+          <span className="hero__subtitle">
+            <span className="hero__accent">Software Engineer</span> focused on
+            clean code and great user experiences.
+          </span>
+        </div>
+        <div className="hero__avatar">
+          <img src={avatar} alt="Caleb-Campbell-Avatar" />
         </div>
       </div>
-      <div className="hero__avatar"></div>
     </Section>
   );
-}
+};
 
 export default Hero;

@@ -1,0 +1,143 @@
+.metrics {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.metrics__grid {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding: 5%;
+}
+
+.metrics__card {
+  background: var(--primary-white);
+  border: 1px solid rgba(255, 255, 250, 0.1);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.metrics__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--red);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.metrics__card:hover {
+  border-color: var(--red);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(255, 71, 71, 0.3);
+}
+
+.metrics__card:hover::before {
+  transform: scaleX(1);
+}
+
+.metrics__card--featured {
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.metrics__card--featured .metrics__label {
+  color: var(--primary-white);
+}
+
+.metrics__card--featured .metrics__value {
+  color: var(--primary-white);
+}
+
+.metrics__card--featured::before {
+  background: rgba(255, 255, 250, 0.2);
+}
+
+.metrics__card--featured:hover {
+  background: #e63939;
+  border-color: #e63939;
+  box-shadow: 0 10px 30px rgba(255, 71, 71, 0.4);
+}
+
+.metrics__label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--grey);
+  margin-bottom: 0.8rem;
+}
+
+.metrics__value {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--primary-black);
+  letter-spacing: 0.02em;
+}
+
+.metrics__meta {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.5rem;
+  line-height: 1;
+
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 968px) {
+  .metrics {
+    padding: 4rem 3%;
+    min-height: 100dvh;
+  }
+
+  .metrics__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+
+  .metrics__card {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .metrics__value {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .metrics {
+    padding: 3rem 5%;
+  }
+
+  .metrics__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .metrics__card {
+    padding: 2rem 1.5rem;
+  }
+
+  .metrics__label {
+    font-size: 0.8rem;
+  }
+
+  .metrics__value {
+    font-size: 2rem;
+  }
+}

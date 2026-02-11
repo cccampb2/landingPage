@@ -1,70 +1,38 @@
 :root {
-  /* Core Background Colors */
-  --background-primary: #121212; /* Deep Black - Main Background */
-  --background-secondary: #161616; /* Dark Gray - Sections */
-  --background-tertiary: #222222; /* Slightly Lighter Gray - Cards, Panels */
-
-  /* Text Colors */
-  --text-primary: #ffffff; /* White - Main Text */
-  --text-secondary: #b3b3b3; /* Light Gray - Less Prominent Text */
-  --text-muted: #8c8c8c; /* Muted Gray - Subtle Text */
-
-  /* Accent Colors */
-  --accent-primary: #fe6807; /* Neon Cyan - Highlights, Hover Effects */
-
-  /* Button & UI Colors */
-  --button-background: #1a1a1a; /* Dark Gray - Default Button */
-  --button-hover: var(--accent-primary); /* Neon Cyan for Hover */
-  --button-text: var(--text-primary); /* White Text on Buttons */
-  --border-color: #262626; /* Darker Gray for Borders */
-  --divider-color: #262626; /* Dark Gray - Soft & Minimal */
+  --primary-black: #020202;
+  --primary-white: #fffffa;
+  --grey: #b8b8b8;
+  --red: #ff4747;
+  --red-hover: #d84727;
 }
 
 * {
   box-sizing: border-box;
   letter-spacing: 0.5px;
+  font-family: "Montserrat", sans-serif;
 }
 html {
-  background-color: var(--background-primary);
   scroll-behavior: smooth;
 }
-.page {
-  margin: 0;
-  background-color: var(--background-primary);
-  background-image: url(../../assets/background.svg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-blend-mode: overlay;
-  padding: 32px;
-  min-height: 100vh;
-  font-family: "AfacadFlux", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.circle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--red);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+  animation: pop 0.5s forwards;
 }
 
-.page__content {
-  position: relative;
-  z-index: 2;
-  max-width: 1440px;
-}
-
-@media (max-width: 1024px) {
-  .page {
-    padding: 24px;
+@keyframes pop {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
   }
-}
-
-@media (max-width: 768px) {
-  .page {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .page {
-    padding: 16px;
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
   }
 }

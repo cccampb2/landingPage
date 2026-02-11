@@ -1,68 +1,25 @@
 import "./Header.css";
-import { IoIosClose, IoIosMenu } from "react-icons/io";
-import logo from "../../assets/cclogo.png";
-import { useState } from "react";
-import { IconContext } from "react-icons";
 
-function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
+const Header = ({ onOpenModal }) => {
   return (
-    <>
-      <nav className="header">
-        <img src={logo} alt="Caleb Campbell logo" className="header__logo-2" />
-        <div className="header__icons">
-          <a href="#hero" className="header__icon">
-            [Home]
-          </a>
-          <a href="#about" className="header__icon">
-            [About Me]
-          </a>
-          <a href="#experience" className="header__icon">
-            [Experience]
-          </a>
-          <a href="#contact" className="header__icon">
-            [Contact Me]
-          </a>
-        </div>
+    <header className="header">
+      <div className="header__logo">CALEB</div>
+      <nav className="header__nav">
+        <button className="header__link" onClick={() => onOpenModal("about")}>
+          About Me
+        </button>
+        <button
+          className="header__link"
+          onClick={() => onOpenModal("portfolio")}
+        >
+          Portfolio
+        </button>
+        <button className="header__link" onClick={() => onOpenModal("contact")}>
+          Contact
+        </button>
       </nav>
-      <IconContext.Provider value={{ size: "20px" }}>
-        {!isOpen && (
-          <div onClick={toggleOpen} className="header-mobile-menu">
-            <IoIosMenu />
-          </div>
-        )}
-      </IconContext.Provider>
-
-      <nav
-        className={`header-mobile ${
-          isOpen ? "header-mobile_open" : "header-mobile_close"
-        }`}
-      >
-        <div onClick={toggleOpen} className="header__icons">
-          <IconContext.Provider value={{ size: "30px" }}>
-            <div className="header-mobile-close">
-              <IoIosClose />
-            </div>
-          </IconContext.Provider>
-          <a href="#hero" className="header__icon">
-            [Home]
-          </a>
-          <a href="#about" className="header__icon">
-            [About Me]
-          </a>
-          <a href="#experience" className="header__icon">
-            [Experience]
-          </a>
-          <a href="#contact" className="header__icon">
-            [Contact Me]
-          </a>
-        </div>
-      </nav>
-    </>
+    </header>
   );
-}
+};
 
 export default Header;
