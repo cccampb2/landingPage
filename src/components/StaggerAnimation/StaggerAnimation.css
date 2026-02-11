@@ -4,7 +4,7 @@
   position: relative;
   white-space: nowrap;
   font-weight: 900;
-  font-size: 60px;
+  font-size: clamp(1rem, 4vw, 3.75rem);
 }
 
 .StaggerAnimation__children-1 {

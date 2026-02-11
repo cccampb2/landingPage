@@ -6,5 +6,41 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 5rem;
+  flex: 1;
+}
+
+.experience__education,
+.experience__work {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    height: auto;
+    min-height: 100dvh;
+    padding: 4rem 3%;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .experience {
+    height: auto;
+    min-height: auto;
+    padding: 2rem 5%;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 2rem 4%;
+    gap: 2rem;
+  }
 }

@@ -2,9 +2,24 @@ import "./App.css";
 import Hero from "../Hero/Hero.jsx";
 import Experience from "../Experience/Experience.jsx";
 import Modal from "../Modal/Modal.jsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MetricsFooterSection from "../MetricsFooterSection/MetricsFooterSection.jsx";
 function App() {
+  useEffect(() => {
+    document.addEventListener("click", function (e) {
+      const circle = document.createElement("div");
+      circle.classList.add("circle");
+      circle.style.left = e.pageX + "px";
+      circle.style.top = e.pageY + "px";
+      document.body.appendChild(circle);
+
+      // Remove circle after animation
+      circle.addEventListener("animationend", () => {
+        circle.remove();
+      });
+    });
+  }, []);
+
   const [activeModal, setActiveModal] = useState(null);
 
   // Modal content data
