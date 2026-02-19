@@ -132,7 +132,15 @@ function App() {
           <ul>
             <li>Email: calebccampbell19@gmail.com</li>
             <li>Phone: (336) 688-8825</li>
-            <li>LinkedIn: https://www.linkedin.com/in/calebccampbell</li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/calebccampbell"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn: https://www.linkedin.com/in/calebccampbell
+              </a>
+            </li>
           </ul>
 
           <p>

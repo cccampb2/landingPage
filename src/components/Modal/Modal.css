@@ -155,6 +155,22 @@
   position: relative;
   font-size: 1.05rem;
   line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.modal__content li a {
+  text-decoration: none;
+  color: var(--primary-black);
+}
+
+.modal__content li a:hover {
+  cursor: pointer;
+}
+
+.modal__content li a:link,
+.modal__content li a:visited,
+.modal__content li a:active {
+  text-decoration: none;
 }
 
 .modal__content li::before {
