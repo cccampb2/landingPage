@@ -63,7 +63,7 @@ const MetricsGrid = () => {
         {/* Deployed Apps */}
         <div className="metrics__card">
           <h3 className="metrics__label">Deployed Apps</h3>
-          <p className="metrics__value">2 Production</p>
+          <p className="metrics__value">3 Production</p>
         </div>
 
         {/* Learning */}

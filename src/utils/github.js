@@ -29,7 +29,6 @@ export async function getGitHubStats() {
   const stats = {
     repos: user.public_repos,
     pullRequests: prs.total_count,
-    // commits can be added approx via events if desired
   };
 
   // 3. Cache the result in localStorage
