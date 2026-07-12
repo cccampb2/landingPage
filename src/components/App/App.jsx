@@ -71,27 +71,22 @@ function App() {
             capabilities. Each one represents a unique challenge and creative
             solution.
           </p>
-
-          <h3>NewsExplorer</h3>
+          <h3>Shiftxd Souls</h3>
           <p>
-            My final project in my full-stack software engineering program.
-            Built with React and integrated with a third-party news API, the
-            application allows users to search for articles by keyword and save
-            selected content to a personalized “Saved Articles” page for later
-            viewing.
+            I am currently putting the finishing touches on a full-stack MERN
+            web application for a local car club. The platform features secure
+            JWT authentication, role-based authorization, invite-only member
+            registration, event management with RSVPs, member profiles,
+            announcements, and an administrative dashboard. The application is
+            designed as an exclusive members-only platform, where authenticated
+            members have access to the full community experience while
+            non-members are limited to publicly available content. I’m currently
+            completing the final authentication and authorization features
+            before deployment.
           </p>
-
-          <h3>What to Wear (WTWR) </h3>
-          <p>
-            A full-stack web application that helps users choose appropriate
-            clothing based on real-time weather conditions in their location.
-            Built with React, the platform allows users to browse
-            weather-specific outfits, upload their own garments, and manage
-            items through a personalized profile page. The application
-            implements secure authentication and authorization using JSON Web
-            Tokens (JWT), and communicates with a Node.js and Express backend
-            with data persisted in MongoDB.
-          </p>
+          <a href="https://www.shiftxdsouls.com">
+            Current Pre Authentication/Authorization Release
+          </a>
 
           <h3>Fish or Fiction</h3>
           <p>
@@ -106,13 +101,25 @@ function App() {
             kiosk environments.
           </p>
 
-          <h3>Shiftxd Souls</h3>
+          <h3>What to Wear (WTWR) </h3>
           <p>
-            I am currently in the planning phase of a web application for a
-            local car club, working through project requirements and
-            documentation. The platform will serve both members and non-members,
-            providing event scheduling, announcements, and a space for sharing
-            photos and updates.
+            A full-stack web application that helps users choose appropriate
+            clothing based on real-time weather conditions in their location.
+            Built with React, the platform allows users to browse
+            weather-specific outfits, upload their own garments, and manage
+            items through a personalized profile page. The application
+            implements secure authentication and authorization using JSON Web
+            Tokens (JWT), and communicates with a Node.js and Express backend
+            with data persisted in MongoDB.
+          </p>
+
+          <h3>NewsExplorer</h3>
+          <p>
+            My final project in my full-stack software engineering program.
+            Built with React and integrated with a third-party news API, the
+            application allows users to search for articles by keyword and save
+            selected content to a personalized “Saved Articles” page for later
+            viewing.
           </p>
         </>
       ),
